@@ -64,7 +64,7 @@
   }
 
   &-profileImage {
-    @include flex(0 1 auto);
+    @include flex(0 0 auto);
     height: $pxMobile * 70;
     border-radius: 50%;
     position: absolute;
