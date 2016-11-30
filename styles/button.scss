@@ -1,0 +1,13 @@
+@import 'mixins/_all';
+
+.bioButton {
+  @extend %button;
+
+  &--inverted {
+    @extend %buttonInverted;
+  }
+
+  &--large {
+    @extend %buttonLarge;
+  }
+}

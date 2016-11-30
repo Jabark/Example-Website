@@ -1,0 +1,119 @@
+.bioReports {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 3.07693vw; }
+  @media only screen and (min-width: 768px) {
+    .bioReports {
+      padding: 0; } }
+  .bioReports-header {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 100%;
+    -moz-box-flex: 1;
+    -moz-flex: 1 0 100%;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    margin-bottom: 3.07693vw; }
+    @media only screen and (min-width: 768px) {
+      .bioReports-header {
+        margin-bottom: 1.76887vw; } }
+  .bioReports-heading {
+    font-size: 6.15386vw;
+    font-weight: 400;
+    color: #004421; }
+    @media only screen and (min-width: 768px) {
+      .bioReports-heading {
+        font-size: 1.88679vw; } }
+  @media only screen and (min-width: 768px) {
+    .bioReports-headerButton::after {
+      content: ' & reports'; } }
+  .bioReports-report {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -moz-box-flex: 1;
+    -moz-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    background-color: #f5f5f5;
+    border-radius: 1.53847vw;
+    box-sizing: border-box;
+    margin-bottom: 3.07693vw;
+    padding: 3.07693vw;
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .bioReports-report {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0 0px;
+        -moz-box-flex: 1;
+        -moz-flex: 1 0 0px;
+        -ms-flex: 1 0 0px;
+        flex: 1 0 0px;
+        border-radius: 0.29481vw;
+        margin-bottom: 0;
+        margin-left: 1.17925vw;
+        padding: 1.17925vw; }
+        .bioReports-report:nth-child(3n+2) {
+          margin-left: 0; } }
+  .bioReports-reportImage {
+    height: 23.07698vw;
+    margin-right: 4.61539vw;
+    width: 15.38465vw; }
+    @media only screen and (min-width: 768px) {
+      .bioReports-reportImage {
+        height: 8.84434vw;
+        margin-right: 1.17925vw;
+        width: 5.89623vw; } }
+  .bioReports-reportContent {
+    max-width: calc(100% - (0.30769vw * 65)); }
+    @media only screen and (min-width: 768px) {
+      .bioReports-reportContent {
+        max-width: calc(100% - (0.05896vw * 140)); } }
+  .bioReports-reportHeading {
+    font-size: 4.92309vw;
+    font-weight: 400;
+    color: #004421;
+    margin-bottom: 3.07693vw; }
+    @media only screen and (min-width: 768px) {
+      .bioReports-reportHeading {
+        font-size: 1.17925vw;
+        margin-bottom: 1.17925vw; } }
+  .bioReports-reportLink {
+    font-size: 4.3077vw;
+    font-weight: 700;
+    color: #12b161;
+    border-bottom: 0.30769vw solid #12b161;
+    display: block;
+    padding-bottom: 3.07693vw; }
+    @media only screen and (min-width: 768px) {
+      .bioReports-reportLink {
+        font-size: 0.9434vw;
+        border-bottom: 0.05896vw solid #12b161;
+        padding-bottom: 0.58962vw; } }
+
+/*# sourceMappingURL=reports.css.map */

@@ -1,0 +1,92 @@
+.bioExplore {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  padding: 0 3.07693vw; }
+  @media only screen and (min-width: 768px) {
+    .bioExplore {
+      margin: 2.94811vw -0.58962vw 0;
+      padding: 0; } }
+  .bioExplore-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 100%;
+    -moz-box-flex: 1;
+    -moz-flex: 1 0 100%;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 0.30769vw solid #004421;
+    padding: 6.15386vw 0; }
+    @media only screen and (min-width: 768px) {
+      .bioExplore-item {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0 auto;
+        -moz-box-flex: 1;
+        -moz-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+        border-bottom: 0;
+        margin: 0.58962vw;
+        padding: 0;
+        width: calc(33.33% - ((0.05896vw * 20) * 2)); } }
+  .bioExplore-image {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    height: 21.53851vw;
+    margin-right: 3.07693vw;
+    width: 21.53851vw; }
+    @media only screen and (min-width: 768px) {
+      .bioExplore-image {
+        height: 8.25472vw;
+        margin-right: 0.58962vw;
+        width: 8.25472vw; } }
+  .bioExplore-textContainer {
+    max-width: calc(100% - (0.30769vw * 80)); }
+    @media only screen and (min-width: 768px) {
+      .bioExplore-textContainer {
+        max-width: calc(100% - (0.05896vw * 150)); } }
+  .bioExplore-heading {
+    font-size: 6.15386vw;
+    font-weight: 500;
+    color: #004421;
+    margin-bottom: 3.07693vw; }
+    @media only screen and (min-width: 768px) {
+      .bioExplore-heading {
+        font-size: 1.41509vw;
+        font-weight: 500;
+        color: #004421;
+        margin-bottom: 0.88443vw; } }
+  .bioExplore-link {
+    font-size: 4.3077vw;
+    font-weight: 700;
+    color: #12b161;
+    display: inline-block; }
+    @media only screen and (min-width: 768px) {
+      .bioExplore-link {
+        font-size: 0.9434vw;
+        font-weight: 700;
+        color: #12b161;
+        border-bottom: 1px solid #12b161;
+        padding-bottom: 0.58962vw; } }
+
+/*# sourceMappingURL=explore.css.map */

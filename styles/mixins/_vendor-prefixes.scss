@@ -1,0 +1,21 @@
+@mixin filter($value) {
+  -webkit-filter: $value;
+  filter: $value;
+}
+
+@mixin transform($value) {
+  -ms-transform: $value;
+  -webkit-transform: $value;
+  transform: $value;
+}
+
+@mixin transition($value) {
+  -webkit-transition: $value;
+  transition: $value;
+}
+
+@mixin backgroundGradient($fromColor, $fromOpacity, $toColor, $toOpacity) {
+  background: -moz-linear-gradient(top, rgba($fromColor,$fromOpacity) 0%, rgba($toColor,$toOpacity) 100%); // FF3.6-15
+  background: -webkit-linear-gradient(top, rgba($fromColor,$fromOpacity) 0%,rgba($toColor,$toOpacity) 100%); // Chrome10-25,Safari5.1-6
+  background: linear-gradient(to bottom, rgba($fromColor,$fromOpacity) 0%,rgba($toColor,$toOpacity) 100%); // W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+}

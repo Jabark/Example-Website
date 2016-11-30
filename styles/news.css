@@ -1,0 +1,71 @@
+.bioNews {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 3.07693vw;
+  padding: 3.07693vw; }
+  @media only screen and (min-width: 768px) {
+    .bioNews {
+      padding: 0;
+      margin-bottom: 0; } }
+  .bioNews-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 100%;
+    -moz-box-flex: 1;
+    -moz-flex: 1 0 100%;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    margin-bottom: 3.07693vw; }
+    @media only screen and (min-width: 768px) {
+      .bioNews-item {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0 0px;
+        -moz-box-flex: 1;
+        -moz-flex: 1 0 0px;
+        -ms-flex: 1 0 0px;
+        flex: 1 0 0px;
+        margin-bottom: 0;
+        margin-left: 2.35849vw; }
+        .bioNews-item:nth-child(4n + 1) {
+          margin-left: 0; } }
+  .bioNews-itemStrap, .bioNews-itemLink {
+    font-size: 4.3077vw;
+    font-weight: 700;
+    color: #12b161;
+    padding-bottom: 3.07693vw; }
+    @media only screen and (min-width: 768px) {
+      .bioNews-itemStrap, .bioNews-itemLink {
+        font-size: 0.9434vw;
+        padding-bottom: 0.58962vw; } }
+  .bioNews-itemStrapDate {
+    font-size: 4.3077vw;
+    font-weight: 400;
+    color: #004421;
+    margin-left: 3.07693vw; }
+    @media only screen and (min-width: 768px) {
+      .bioNews-itemStrapDate {
+        font-size: 0.88443vw;
+        margin-left: 0.58962vw; } }
+  .bioNews-itemHeading {
+    font-size: 4.92309vw;
+    font-weight: 400;
+    color: #004421;
+    padding-bottom: 3.07693vw; }
+    @media only screen and (min-width: 768px) {
+      .bioNews-itemHeading {
+        font-size: 1.17925vw;
+        padding-bottom: 0.58962vw; } }
+  .bioNews-itemLink {
+    display: block;
+    border-bottom: 0.30769vw solid #12b161; }
+    @media only screen and (min-width: 768px) {
+      .bioNews-itemLink {
+        border-bottom: 0.05896vw solid #12b161; } }
+
+/*# sourceMappingURL=news.css.map */

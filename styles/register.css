@@ -1,0 +1,191 @@
+.bioRegister {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 3.07693vw;
+  position: relative; }
+  @media only screen and (min-width: 768px) {
+    .bioRegister {
+      display: block;
+      padding: 0; } }
+  .bioRegister-form {
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .bioRegister-form {
+        width: 41.27358vw; } }
+  .bioRegister-formHeading {
+    font-size: 6.15386vw;
+    font-weight: 400;
+    color: #004421;
+    margin-bottom: 6.15386vw; }
+    @media only screen and (min-width: 768px) {
+      .bioRegister-formHeading {
+        font-size: 1.88679vw;
+        margin-bottom: 1.17925vw; } }
+  .bioRegister-formText {
+    font-size: 4.3077vw;
+    font-weight: 400;
+    color: #004421;
+    margin-bottom: 12.30772vw; }
+    @media only screen and (min-width: 768px) {
+      .bioRegister-formText {
+        font-size: 1.06132vw;
+        margin-bottom: 1.17925vw; } }
+  .bioRegister-formForm {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between; }
+    @media only screen and (min-width: 768px) {
+      .bioRegister-formForm {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        -webkit-justify-content: flex-end;
+        -moz-justify-content: flex-end;
+        justify-content: flex-end; } }
+  .bioRegister-formField, .bioRegister-formField--large {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 100%;
+    -moz-box-flex: 1;
+    -moz-flex: 1 0 100%;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    margin-bottom: 3.07693vw; }
+    @media only screen and (min-width: 768px) {
+      .bioRegister-formField, .bioRegister-formField--large {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0 0px;
+        -moz-box-flex: 1;
+        -moz-flex: 1 0 0px;
+        -ms-flex: 1 0 0px;
+        flex: 1 0 0px;
+        margin-bottom: 0.58962vw;
+        padding-left: 0.58962vw; }
+        .bioRegister-formField:nth-child(3n+1), .bioRegister-formField--large:nth-child(3n+1) {
+          padding-left: 0; } }
+    @media only screen and (min-width: 768px) {
+      .bioRegister-formField--large {
+        -webkit-box-flex: 2;
+        -webkit-flex: 2 0 0px;
+        -moz-box-flex: 2;
+        -moz-flex: 2 0 0px;
+        -ms-flex: 2 0 0px;
+        flex: 2 0 0px; } }
+  .bioRegister-formFieldButtons {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 100%;
+    -moz-box-flex: 1;
+    -moz-flex: 1 0 100%;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+    @media only screen and (min-width: 768px) {
+      .bioRegister-formFieldButtons {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        -webkit-justify-content: flex-end;
+        -moz-justify-content: flex-end;
+        justify-content: flex-end; } }
+  .bioRegister-formLabel {
+    font-size: 4.92309vw;
+    font-weight: 700;
+    color: #004421;
+    display: block;
+    padding-bottom: 3.07693vw; }
+    @media only screen and (min-width: 768px) {
+      .bioRegister-formLabel {
+        font-size: 0.9434vw;
+        padding-bottom: 0.58962vw; } }
+  .bioRegister-formInput {
+    font-size: 5.53847vw;
+    font-weight: 600;
+    color: rgba(18, 177, 97, 0.5);
+    border: 0.30769vw solid #12b161;
+    border-radius: 3.07693vw;
+    box-sizing: border-box;
+    outline: none;
+    padding: 3.07693vw;
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .bioRegister-formInput {
+        font-size: 1.06132vw;
+        border: 0.05896vw solid #12b161;
+        border-radius: 0.58962vw;
+        padding: 0.58962vw; } }
+  .bioRegister-formButton {
+    margin-top: 6.15386vw;
+    padding: 3.07693vw 23.07698vw; }
+    @media only screen and (min-width: 768px) {
+      .bioRegister-formButton {
+        margin-top: 0;
+        padding: 0.58962vw 1.47406vw; } }
+  .bioRegister-bubble {
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    background-color: #52c4cc;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 147.69264vw;
+    margin-top: 40px;
+    position: relative;
+    text-align: center;
+    width: 147.69264vw; }
+    @media only screen and (min-width: 768px) {
+      .bioRegister-bubble {
+        height: 27.12264vw;
+        margin-top: 0;
+        padding: 3.53774vw;
+        position: absolute;
+        top: -1.47406vw;
+        right: 2.35849vw;
+        width: 27.12264vw; } }
+  .bioRegister-bubbleContent {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; }
+    @media only screen and (min-width: 768px) {
+      .bioRegister-bubbleContent {
+        width: 75%; } }
+  .bioRegister-bubbleText {
+    font-size: 9.84618vw;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 9.23079vw;
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .bioRegister-bubbleText {
+        font-size: 2.47641vw;
+        margin-bottom: 1.17925vw; } }
+
+/*# sourceMappingURL=register.css.map */

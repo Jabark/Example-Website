@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Institute of Health Equity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles/font-awesome/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles/site.css" />
+    <link rel="stylesheet" type="text/css" href="styles/button.css" />
+    <link rel="stylesheet" type="text/css" href="styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="styles/slideshow.css" />
+    <link rel="stylesheet" type="text/css" href="styles/explore.css" />
+    <link rel="stylesheet" type="text/css" href="styles/director.css" />
+    <link rel="stylesheet" type="text/css" href="styles/reports.css" />
+    <link rel="stylesheet" type="text/css" href="styles/news.css" />
+    <link rel="stylesheet" type="text/css" href="styles/register.css" />
+    <link rel="stylesheet" type="text/css" href="styles/footer.css" />
+    <script>
+        if (window.navigator.appName === 'Microsoft Internet Explorer') {
+            document.write('<link rel="stylesheet" type="text/css" href="styles/browser.css" />');
+        }
+    </script>
+    <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        if (!window.jQuery) {
+            document.write('<script src="scripts/jquery.js"><\/script>');
+        }
+    </script>
+    <script src="scripts/jquery.cycle2.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/util.js"></script>
+</head>
+<body class="bioSite">
+    <header class="bioSite-sectionHeader bioHeader">
+        <nav class="bioHeader-navigation">
+            <a href="index.html" class="bioHeader-logoLink">
+                <img class="bioHeader-logo" src="images/logo.png" alt="Institute of Health Equity" />
+            </a>
+
+            <input type="checkbox" id="Nav" name="Nav" class="bioHeader-navActivator" />
+            <label for="Nav" class="bioHeader-navIcon">
+                <i class="fa fa-align-justify" aria-hidden="true"></i>
+                <!-- #TODO ask if it should be <i class="fa fa-bars" aria-hidden="true"></i> instead -->
+            </label>
+            <ul class="bioHeader-navList">
+                <li class="bioHeader-navListItem">
+                    <a href="index.html" class="bioHeader-navListItemLink">Home</a>
+                </li>
+                <li class="bioHeader-navListItem">
+                    <a href="#about" class="bioHeader-navListItemLink">About us</a>
+                    <ul class="bioHeader-navListSub">
+                        <li class="bioHeader-navListItemSub">
+                            <a href="#who" class="bioHeader-navListItemSubLink">
+                                Who we are
+                            </a>
+                        </li>
+                        <li class="bioHeader-navListItemSub">
+                            <a href="#what" class="bioHeader-navListItemSubLink">
+                                What we do
+                            </a>
+                        </li>
+                        <li class="bioHeader-navListItemSub">
+                            <a href="#aboutmm" class="bioHeader-navListItemSubLink">
+                                About Michael Marmot
+                            </a>
+                        </li>
+                        <li class="bioHeader-navListItemSub">
+                            <a href="#ihe" class="bioHeader-navListItemSubLink">
+                                IHE Influence
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="bioHeader-navListItem">
+                    <a href="#work" class="bioHeader-navListItemLink">Our work</a>
+                </li>
+                <li class="bioHeader-navListItem">
+                    <a href="#randr" class="bioHeader-navListItemLink">Resources &amp; Reports</a>
+                </li>
+                <li class="bioHeader-navListItem">
+                    <a href="#news" class="bioHeader-navListItemLink">In the news</a>
+                </li>
+                <li class="bioHeader-navListItem">
+                    <a href="#search" class="bioHeader-navListItemLink">
+                        <i class="fa fa-search bioHeader-navListItemIcon" aria-hidden="true"></i>
+                        <span class="bioHeader-navListItemIconText">Search</span>
+                    </a>
+                </li>
+                <li class="bioHeader-navListItem">
+                    <a href="#contact" class="bioHeader-navListItemLinkButton">
+                        Contact us
+                    </a>
+                    <a href="#contact" class="bioButton">
+                        Contact us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <article class="bioSite-section--noPadding bioSite-sectionSlideshow cycle-slideshow bioSlideshow"
+             data-cycle-slides="> section"
+             data-cycle-log="false"
+             data-cycle-pager=".bioSlideshow-mobilePager"
+    >
+        <section class="bioSlideshow-slide"
+                 style="background-image: url(images/slides/1.jpg)">
+            <div class="bioSlideshow-slidePanel">
+                <h1 class="bioSlideshow-slidePanelHeader">Social Determinants of Health</h1>
+                <p class="bioSlideshow-slidePanelText">In terms of health - good quality health care is a determinant of health, and access, affordability, and acceptability of health are all socially determined.  But most social determinants of health lie outside the health care system.</p>
+                <a href="#readmore" class="bioSlideshow-slidePanelButton bioButton--inverted">Read More</a>
+            </div>
+        </section>
+        <section class="bioSlideshow-slide"
+                 style="background-image: url(images/slides/2.jpg)">
+            <div class="bioSlideshow-slidePanel">
+                <h1 class="bioSlideshow-slidePanelHeader">Monitoring Progress</h1>
+                <p class="bioSlideshow-slidePanelText">Quisque condimentum, diam sit amet ornare mattis, odio nunc dignissim nulla, at pretium elit nibh ac lorem. Mauris in auctor tellus. Pellentesque nec dui in felis dignissim vehicula vel sit amet urna. Duis finibus dui a augue iaculis ultrices. </p>
+                <a href="#readmore" class="bioSlideshow-slidePanelButton bioButton--inverted">Read More</a>
+            </div>
+        </section>
+        <section class="bioSlideshow-slide"
+                 style="background-image: url(images/slides/3.jpg)">
+            <div class="bioSlideshow-slidePanel">
+                <h1 class="bioSlideshow-slidePanelHeader">What Works</h1>
+                <p class="bioSlideshow-slidePanelText">Sed ac ex vel quam finibus posuere ut quis eros. Vivamus laoreet, lorem pharetra fermentum egestas, tellus risus gravida ex, at sagittis dolor odio eu sem. Pellentesque elementum dolor non orci dictum, eu dapibus arcu elementum.</p>
+                <a href="#readmore" class="bioSlideshow-slidePanelButton bioButton--inverted">Read More</a>
+            </div>
+        </section>
+        <section class="bioSlideshow-slide"
+                 style="background-image: url(images/slides/4.jpg)">
+            <div class="bioSlideshow-slidePanel">
+                <h1 class="bioSlideshow-slidePanelHeader">Making it Happen</h1>
+                <p class="bioSlideshow-slidePanelText">Vivamus nisi lorem, aliquet nec enim ut, dapibus ornare augue. Curabitur quis rhoncus risus. Aliquam porta maximus turpis quis posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <a href="#readmore" class="bioSlideshow-slidePanelButton bioButton--inverted">Read More</a>
+            </div>
+        </section>
+    </article>
+
+    <div class="bioSite-section bioSlideshow-navigation">
+        <div class="bioSlideshow-navigationItemContainer">
+            <div class="bioSlideshow-navigationItem" data-cycle-cmd="goto" data-cycle-arg="0">
+                Social Determinants of Health
+            </div>
+        </div>
+        <div class="bioSlideshow-navigationItemContainer">
+            <div class="bioSlideshow-navigationItem" data-cycle-cmd="goto" data-cycle-arg="1">
+                Monitoring Progress
+            </div>
+        </div>
+        <div class="bioSlideshow-navigationItemContainer">
+            <div class="bioSlideshow-navigationItem" data-cycle-cmd="goto" data-cycle-arg="2">
+                What Works
+            </div>
+        </div>
+        <div class="bioSlideshow-navigationItemContainer">
+            <div class="bioSlideshow-navigationItem" data-cycle-cmd="goto" data-cycle-arg="3">
+                Making it Happen
+            </div>
+        </div>
+        <div class="bioSlideshow-mobilePager"></div>
+    </div>
+
+    <main class="bioSite-section">
+        <article class="bioExplore bioSite-sectionMain">
+            <section class="bioExplore-item">
+                <img class="bioExplore-image" src="images/explore/1.jpg" alt="" />
+                <div class="bioExplore-textContainer">
+                    <h1 class="bioExplore-heading">
+                        Give every child the best start in life
+                    </h1>
+                    <a href="#explore1" class="bioExplore-link">
+                        Explore Early Years
+                    </a>
+                </div>
+            </section>
+
+            <section class="bioExplore-item">
+                <img class="bioExplore-image" src="images/explore/2.jpg" alt="" />
+                <div class="bioExplore-textContainer">
+                    <h1 class="bioExplore-heading">
+                        Enable all children, young people & adults to maximise their capabilities and have control over their lives
+                    </h1>
+                    <a href="#explore2" class="bioExplore-link">
+                        Explore Equal Opportunities
+                    </a>
+                </div>
+            </section>
+
+            <section class="bioExplore-item">
+                <img class="bioExplore-image" src="images/explore/3.jpg" alt="" />
+                <div class="bioExplore-textContainer">
+                    <h1 class="bioExplore-heading">
+                        Create fair employment and good work for all
+                    </h1>
+                    <a href="#explore3" class="bioExplore-link">
+                        Explore Quality Work
+                    </a>
+                </div>
+            </section>
+
+            <section class="bioExplore-item">
+                <img class="bioExplore-image" src="images/explore/4.jpg" alt="" />
+                <div class="bioExplore-textContainer">
+                    <h1 class="bioExplore-heading">
+                        Ensure healthy standard of living for all
+                    </h1>
+                    <a href="#explore4" class="bioExplore-link">
+                        Explore Standard of Living
+                    </a>
+                </div>
+            </section>
+
+            <section class="bioExplore-item">
+                <img class="bioExplore-image" src="images/explore/5.jpg" alt="" />
+                <div class="bioExplore-textContainer">
+                    <h1 class="bioExplore-heading">
+                        Create and develop healthy and sustainable places and communities
+                    </h1>
+                    <a href="#explore5" class="bioExplore-link">
+                        Explore Communities, Housing & Environment
+                    </a>
+                </div>
+            </section>
+
+            <section class="bioExplore-item">
+                <img class="bioExplore-image" src="images/explore/6.jpg" alt="" />
+                <div class="bioExplore-textContainer">
+                    <h1 class="bioExplore-heading">
+                        Strengthen the role and impact of ill-health prevention
+                    </h1>
+                    <a href="#explore6" class="bioExplore-link">
+                        Explore Ill-Health Prevention
+                    </a>
+                </div>
+            </section>
+        </article>
+
+        <article class="bioDirector bioSite-sectionMain">
+            <section class="bioDirector-profile">
+                <h1 class="bioDirector-profileHeading">
+                    Latest from our Director
+                </h1>
+
+                <h2 class="bioDirector-profileSubheading">
+                    Professor Sir Michael Marmot
+                </h2>
+
+                <div class="bioDirector-profileContent">
+                    <a class="bioDirector-profileLink" href="#twitterFollow">
+                        Follow Michael on Twitter
+                    </a>
+                    <img class="bioDirector-profileImage" src="images/director/1.png" alt="" />
+                </div>
+            </section>
+
+            <section class="bioDirector-tweets">
+                <div class="bioDirector-tweet">
+                    <p class="bioDirector-tweetContent">
+                        Amy at Denali reviews our Scandium Sleeping Bag. See what she has to say here! <a href="#">http://blog.denalioutdoor.com/2015/...</a>
+                    </p>
+
+                    <div class="bioDirector-tweetInfo">
+                        15/09/15
+                        <i class="fa fa-twitter bioDirector-tweetIcon"></i>
+                    </div>
+                </div>
+
+                <div class="bioDirector-tweet">
+                    <p class="bioDirector-tweetContent">
+                        Amy at Denali reviews our Scandium Sleeping Bag. See what she has to say here! <a href="#">http://blog.denalioutdoor.com/2015/...</a>
+                    </p>
+
+                    <div class="bioDirector-tweetInfo">
+                        15/09/15
+                        <i class="fa fa-twitter bioDirector-tweetIcon"></i>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bioDirector-links">
+                <a href="#wma" class="bioDirector-link">
+                    <h2 class="bioDirector-linkHeading">
+                        World Medical Association
+                    </h2>
+                    <p class="bioDirector-linkText">
+                        About Michael's Presidency
+                    </p>
+                </a>
+
+                <a href="#marmotreview" class="bioDirector-link">
+                    <h2 class="bioDirector-linkHeading">
+                        Marmot Review
+                    </h2>
+                    <p class="bioDirector-linkText">
+                        Read Michael's blog
+                    </p>
+                </a>
+
+                <a href="#aboutmm" class="bioDirector-link">
+                    <h2 class="bioDirector-linkHeading">
+                        About Michael Marmot
+                    </h2>
+                    <p class="bioDirector-linkText">
+                        Read more
+                    </p>
+                </a>
+            </section>
+        </article>
+
+        <article class="bioReports bioSite-sectionMain">
+            <header class="bioReports-header">
+                <h1 class="bioReports-heading">Latest reports</h1>
+                <a href="#allR&R" class="bioReports-headerButton bioButton">All resources</a>
+            </header>
+
+            <section class="bioReports-report">
+                <img class="bioReports-reportImage" src="images/reports/1.jpg" alt="" />
+                <div class="bioReports-reportContent">
+                    <h2 class="bioReports-reportHeading">
+                        The impact of the economic downturn and policy changes on health inequalities in London
+                    </h2>
+                    <a href="#report1" class="bioReports-reportLink">
+                        Read more
+                    </a>
+                </div>
+            </section>
+
+            <section class="bioReports-report">
+                <img class="bioReports-reportImage" src="images/reports/2.jpg" alt="" />
+                <div class="bioReports-reportContent">
+                    <h2 class="bioReports-reportHeading">
+                        DRIVERS Recommendations
+                    </h2>
+                    <a href="#report2" class="bioReports-reportLink">
+                        Read more
+                    </a>
+                </div>
+            </section>
+
+            <section class="bioReports-report">
+                <img class="bioReports-reportImage" src="images/reports/3.jpg" alt="" />
+                <div class="bioReports-reportContent">
+                    <h2 class="bioReports-reportHeading">
+                        The impact of the economic downturn and policy changes on health inequalities in London
+                    </h2>
+                    <a href="#report3" class="bioReports-reportLink">
+                        Read more
+                    </a>
+                </div>
+            </section>
+        </article>
+
+        <article class="bioNews bioSite-sectionMain">
+            <section class="bioNews-item">
+                <p class="bioNews-itemStrap">
+                    In the news
+                    <span class="bioNews-itemStrapDate">12/09/15</span>
+                </p>
+
+                <h1 class="bioNews-itemHeading">The Impact of Adverse Experiences in the Home on the Health of Children and Young People, and Inequalities in Prevalence and Effects</h1>
+
+                <a class="bioNews-itemLink" href="#news1">
+                    Read more
+                </a>
+            </section>
+
+            <section class="bioNews-item">
+                <p class="bioNews-itemStrap">
+                    IHE Article
+                    <span class="bioNews-itemStrapDate">12/09/15</span>
+                </p>
+
+                <h1 class="bioNews-itemHeading">Core intended learning outcomes for tackling health inequalities in undergraduate medicine</h1>
+
+                <a class="bioNews-itemLink" href="#news1">
+                    Read more
+                </a>
+            </section>
+
+            <section class="bioNews-item">
+                <p class="bioNews-itemStrap">
+                    Presentation
+                    <span class="bioNews-itemStrapDate">12/09/15</span>
+                </p>
+
+                <h1 class="bioNews-itemHeading">Why children die: death in infants, children, and young people in the UK (Part A)</h1>
+
+                <a class="bioNews-itemLink" href="#news1">
+                    Read more
+                </a>
+            </section>
+
+            <section class="bioNews-item">
+                <p class="bioNews-itemStrap">
+                    Event
+                    <span class="bioNews-itemStrapDate">12/09/15</span>
+                </p>
+
+                <h1 class="bioNews-itemHeading">Marmot Indicators 2014</h1>
+
+                <a class="bioNews-itemLink" href="#news1">
+                    Read more
+                </a>
+            </section>
+        </article>
+
+        <article class="bioRegister bioSite-sectionMain">
+            <section class="bioRegister-form">
+                <h1 class="bioRegister-formHeading">
+                    Stay up to date
+                </h1>
+
+                <p class="bioRegister-formText">
+                    All the latest IHE's news and event straight to your inbox. Fill in your details:
+                </p>
+
+                <form class="bioRegister-formForm">
+                    <div class="bioRegister-formField">
+                        <label class="bioRegister-formLabel" for="registerName">
+                            Name
+                        </label>
+                        <input required class="bioRegister-formInput" name="name" id="registerName" />
+                    </div>
+
+                    <div class="bioRegister-formField">
+                        <label class="bioRegister-formLabel" for="registerSurname">
+                            Surname
+                        </label>
+                        <input required class="bioRegister-formInput" name="surname" id="registerSurname" />
+                    </div>
+
+                    <div class="bioRegister-formField--large">
+                        <label class="bioRegister-formLabel" for="registerEmail">
+                            Email Address
+                        </label>
+                        <input required class="bioRegister-formInput" name="email" id="registerEmail" />
+                    </div>
+
+                    <div class="bioRegister-formFieldButtons">
+                        <button class="bioButton bioRegister-formButton">
+                            Sign up
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="bioRegister-bubble">
+                <div class="bioRegister-bubbleContent">
+                    <h1 class="bioRegister-bubbleText">
+                        Got a project, report or case study to share?
+                    </h1>
+                    <button class="bioButton--large">Contribute</button>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="bioSite-section bioSite-sectionMain bioFooter">
+        <div class="bioFooter-contact">
+            <a class="bioFooter-contactEmail" href="mailto:contact@iheucl.org">
+                contact@iheucl.org
+            </a>
+
+            <a class="bioFooter-contactPhone" href="tel:02076791705">
+                0207 679 1705
+            </a>
+
+            <a class="bioButton-icon bioFooter-icon" href="#twitter">
+                <i class="fa fa-twitter bioFooter-iconTwitter"></i>
+            </a>
+
+            <a class="bioButton-icon bioFooter-icon" href="#linkedin">
+                <i class="fa fa-linkedin bioFooter-iconLinkedIn"></i>
+            </a>
+
+            <a class="bioButton-icon bioFooter-icon" href="#facebook">
+                <i class="fa fa-facebook bioFooter-iconFacebook"></i>
+            </a>
+        </div>
+
+        <nav class="bioFooter-nav">
+            <ul class="bioFooter-navList">
+                <li class="bioFooter-navListItem">
+                    <a href="#footer1">About us</a>
+                </li>
+
+                <li class="bioFooter-navListItem">
+                    <a href="#footer2">Our work</a>
+                </li>
+
+                <li class="bioFooter-navListItem">
+                    <a href="#footer3">Resource & Reports</a>
+                </li>
+
+                <li class="bioFooter-navListItem">
+                    <a href="#footer4">In the news</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="bioFooter-privacy">
+            <span class="bioFooter-privacyCopyright">
+                &copy; Copyright Jamie Barker <span id="year"></span>
+            </span>
+            <a href="#footer5" class="bioFooter-privacyLink">Privacy policy</a>
+            <a href="#footer6" class="bioFooter-privacyLink">Legal notes</a>
+        </div>
+    </footer>
+
+    <div class="bioBrowser">
+        <p class="bioBrowser-line">
+            Hi there, you're currently using a browser that Microsoft <a href="https://www.microsoft.com/en-gb/WindowsForBusiness/End-of-IE-support" target="_blank">no longer supports</a>.
+        </p>
+        <p class="bioBrowser-line">
+            Therefore because it's now a bit of a security hazard, we don't fully support it.
+        </p>
+        <p class="bioBrowser-line">
+            Sorry about that. We recommend you try another browser such as <a href="https://www.google.co.uk/chrome/browser/desktop/" target="_blank">this one</a>.
+        </p>
+        <button class="bioButton--inverted bioBrowser-closeButton">
+            Close
+        </button>
+    </div>
+</body>
+</html>

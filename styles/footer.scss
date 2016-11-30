@@ -1,0 +1,155 @@
+@import 'mixins/_all';
+
+%contact {
+  @include textMobile(24, 600, $color-green);
+  display: block;
+  margin-bottom: $pxMobile * 30;
+
+  &::before {
+    @include textMobile(32, 600, $color-greenDark);
+    display: inline-block;
+    font-family: FontAwesome;
+    margin-right: $pxMobile * 5;
+    vertical-align: middle;
+  }
+
+  @include media(ld) {
+    @include text(24);
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: $px * 40;
+
+    &::before {
+      @include text(32);
+      margin-right: $px * 5;
+    }
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.bioFooter {
+  background: $color-whiteSmoke url(../images/footer.jpg) no-repeat bottom center;
+  background-size: ($pxMobile * 215);
+  box-sizing: border-box;
+  margin-top: $pxMobile * -100;
+  padding: ($pxMobile * 100) ($pxMobile * 10);
+
+  @include media(ld) {
+    background: $color-whiteSmoke url(../images/footer.jpg) no-repeat bottom right ($px * 200);
+    background-size: ($px * 215);
+    margin-top: $px * 50;
+    min-height: $px * 250;
+    padding: ($px * 50) ($px * 200);
+  }
+
+  &-contact {
+    margin-bottom: $px * 40;
+  }
+
+  &-contactEmail {
+    @extend %contact;
+
+    &::before {
+      content: '\f1fa';
+    }
+  }
+
+  &-contactPhone {
+    @extend %contact;
+
+    &::before {
+      content: '\f095';
+    }
+  }
+
+  &-icon {
+    @include flexBox(true);
+    @include align-items(center);
+    @include justify-content(center);
+    @include textMobile(18, 400, $color-white);
+    background-color: $color-greenDark;
+    border-radius: 50%;
+    height: $pxMobile * 40;
+    margin-right: $pxMobile * 10;
+    width: $pxMobile * 40;
+
+    @include media(ld) {
+      @include text(18);
+      height: $px * 40;
+      margin-right: $px * 10;
+      width: $px * 40;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: lighten($color-greenDark, 5%);
+    }
+  }
+
+  &-navList {
+    margin-bottom: $pxMobile * 40;
+
+    @include media(ld) {
+      margin-bottom: $px * 40;
+    }
+  }
+
+  &-navListItem {
+    @include textMobile(18, 700, $color-green);
+    display: block;
+    margin-top: $pxMobile * 40;
+
+    @include media(ld) {
+      @include text(18);
+      display: inline-block;
+      margin-right: $px * 40;
+      margin-top: 0;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  &-privacy {
+    @include textMobile(16, 600, $color-greenDark);
+
+    @include media(ld) {
+      @include text(16);
+      margin-bottom: $px * 40;
+    }
+  }
+
+  &-privacyCopyright {
+    display: block;
+    margin-bottom: $pxMobile * 40;
+
+    @include media(ld) {
+      display: inline;
+      margin-bottom: 0;
+    }
+  }
+
+  &-privacyLink {
+    margin-right: $pxMobile * 25;
+
+    @include media(ld) {
+      margin-left: $px * 40;
+      margin-right: 0;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}

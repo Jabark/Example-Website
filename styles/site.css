@@ -1,0 +1,35 @@
+.bioSite {
+  background-color: #fff; }
+  .bioSite::before {
+    content: '';
+    display: block;
+    height: 20.00005vw;
+    max-height: 105px;
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .bioSite::before {
+        display: none; } }
+  .bioSite-section, .bioSite-section--noPadding, .bioSite-sectionHeader, .bioSite-sectionSlideshow {
+    box-sizing: border-box;
+    display: block;
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .bioSite-section, .bioSite-section--noPadding, .bioSite-sectionHeader, .bioSite-sectionSlideshow {
+        padding: 0 11.79245vw; } }
+    .bioSite-section--noPadding {
+      padding: 0; }
+  .bioSite-sectionHeader {
+    height: 20.00005vw;
+    max-height: 105px;
+    position: fixed;
+    top: 0;
+    z-index: 5000; }
+    @media only screen and (min-width: 768px) {
+      .bioSite-sectionHeader {
+        height: 6.19104vw;
+        max-height: none;
+        position: relative; } }
+  .bioSite-sectionMain {
+    margin-top: 2.94811vw; }
+
+/*# sourceMappingURL=site.css.map */

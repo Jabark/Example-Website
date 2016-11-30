@@ -1,0 +1,171 @@
+@import 'mixins/_all';
+
+.bioSlideshow {
+  padding-bottom: 44%;
+  position: relative;
+  width: 100%;
+  z-index: 200;
+
+  @include media(ld) {
+    padding-bottom: 40.802%;
+    z-index: 0;
+  }
+
+  &-slide {
+    background-size: 150%;
+    background-position: 100% 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    @include media(ld) {
+      background-size: cover;
+    }
+  }
+
+  &-slidePanel {
+    @include flexBox;
+    @include align-items(flex-start);
+    @include flex-direction(column);
+    background-color: $color-green;
+    color: $color-white;
+    padding: ($pxMobile * 20) ($pxMobile * 20) 0 ($pxMobile * 20);
+    position: absolute;
+    top: 100%;
+
+    @include media(ld) {
+      display: block;
+      left: $px * 200;
+      padding: $px * 30;
+      right: 54%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &-slidePanelHeader {
+    @include textMobile(20, 700);
+    margin-bottom: $pxMobile * 10;
+
+    @include media(ld) {
+      @include text(60, 300);
+      margin-bottom: $px * 50;
+      position: relative;
+
+      &::after {
+        border-bottom: ($px * 1) solid $color-white;
+        bottom: $px * -25;
+        content: '';
+        left: 0;
+        position: absolute;
+        width: $px * 160;
+      }
+    }
+  }
+
+  &-slidePanelText {
+    @include textMobile(14);
+    max-height: $pxMobile * 85;
+    overflow: hidden;
+    position: relative;
+
+    @include media(ld) {
+      @include text(18);
+      margin-bottom: $px * 20;
+      max-height: none;
+    }
+
+    &::after {
+      @include backgroundGradient($color-green, 0, $color-green, 1);
+      content: '';
+      display: block;
+      height: $pxMobile * 10;
+      position: absolute;
+      top: $pxMobile * 75;
+      width: 100%;
+    }
+  }
+
+  &-slidePanelButton {
+    @include align-self(center);
+    margin-top: $pxMobile * 10;
+    padding: ($pxMobile * 10) ($pxMobile * 50);
+
+    @include media(ld) {
+      margin-top: 0;
+      padding: ($px * 10) ($px * 25);
+    }
+  }
+
+  &-navigation {
+    @include flexBox;
+    background-color: $color-green;
+    height: $pxMobile * 230;
+    padding: 0 ($px * 200);
+    position: relative;
+    z-index: 100;
+
+    @include media(ld) {
+      height: $px * 100;
+    }
+  }
+
+  &-navigationItemContainer {
+    @include flexBox;
+    @include align-items(center);
+    position: relative;
+
+    &:first-child {
+      .bioSlideshow-navigationItem {
+        border: 0;
+        padding-left: 0;
+      }
+    }
+  }
+
+  &-navigationItem {
+    border-left: 1px solid $color-white;
+    color: $color-greenDark;
+    cursor: pointer;
+    font-size: $px * 20;
+    padding: 0 ($px * 30);
+    text-align: center;
+
+    &.isActive {
+      color: $color-white;
+
+      &::after {
+        border-bottom: ($px * 30) solid $color-green;
+        border-left: ($px * 75) solid transparent;
+        border-right: ($px * 75) solid transparent;
+        bottom: 100%;
+        content: '';
+        display: block;
+        height: 0;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 0;
+      }
+    }
+  }
+
+  &-mobilePager {
+    @include textMobile(30, 400, $color-greenDark);
+    bottom: $pxMobile * 10;
+    cursor: pointer;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+
+    @include media(ld) {
+      display: none;
+    }
+
+    .cycle-pager-active {
+      color: $color-white;
+    }
+  }
+}

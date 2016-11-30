@@ -1,0 +1,38 @@
+@import 'mixins/_all';
+
+.bioBrowser {
+  background-color: $color-greenDark;
+  bottom: 0;
+  box-sizing: border-box;
+  display: block;
+  height: $pxMobile * 200;
+  padding: $pxMobile * 10;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10000;
+
+  @include media(ld) {
+    height: $px * 200;
+    padding: $px * 10;
+  }
+
+  &-line {
+    @include textMobile(12, 400, $color-white);
+    margin-bottom: $pxMobile * 20;
+
+    @include media(ld) {
+      @include text(20);
+      margin-bottom: $px * 20;
+    }
+
+    & > a {
+      text-decoration: underline;
+    }
+  }
+
+  &-closeButton {
+    display: inline-block;
+  }
+}

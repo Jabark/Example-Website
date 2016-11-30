@@ -1,0 +1,166 @@
+@import 'mixins/_all';
+
+.bioRegister {
+  @include flexBox;
+  @include flex-direction(column);
+  padding: $pxMobile * 10;
+  position: relative;
+
+  @include media(ld) {
+    display: block;
+    padding: 0;
+  }
+
+  &-form {
+    width: 100%;
+
+    @include media(ld) {
+      width: $px * 700;
+    }
+  }
+
+  &-formHeading {
+    @include textMobile(20, 400, $color-greenDark);
+    margin-bottom: $pxMobile * 20;
+
+    @include media(ld) {
+      @include text(32);
+      margin-bottom: $px * 20;
+    }
+  }
+
+  &-formText {
+    @include textMobile(14, 400, $color-greenDark);
+    margin-bottom: $pxMobile * 40;
+
+    @include media(ld) {
+      @include text(18);
+      margin-bottom: $px * 20;
+    }
+  }
+
+  &-formForm {
+    @include flexBox;
+    @include flex-wrap(wrap);
+    @include justify-content(space-between);
+
+    @include media(ld) {
+      @include justify-content(flex-end);
+    }
+  }
+
+  &-formField {
+    @include flex(1 0 100%);
+    margin-bottom: $pxMobile * 10;
+
+    @include media(ld) {
+      @include flex(1 0 0px);
+      margin-bottom: $px * 10;
+      padding-left: $px * 10;
+
+      &:nth-child(3n+1) {
+        padding-left: 0;
+      }
+    }
+
+    &--large {
+      @extend .bioRegister-formField;
+      @include media(ld) {
+        @include flex(2 0 0px);
+      }
+    }
+  }
+
+  &-formFieldButtons {
+    @include flex(1 0 100%);
+    @include flexBox;
+    @include justify-content(center);
+
+    @include media(ld) {
+      @include justify-content(flex-end);
+    }
+  }
+
+  &-formLabel {
+    @include textMobile(16, 700, $color-greenDark);
+    display: block;
+    padding-bottom: $pxMobile * 10;
+
+    @include media(ld) {
+      @include text(16);
+      padding-bottom: $px * 10;
+    }
+  }
+
+  &-formInput {
+    @include textMobile(18, 600, rgba($color-green, 0.5));
+    border: ($pxMobile * 1) solid $color-green;
+    border-radius: $pxMobile * 10;
+    box-sizing: border-box;
+    outline: none;
+    padding: $pxMobile * 10;
+    width: 100%;
+
+    @include media(ld) {
+      @include text(18);
+      border: ($px * 1) solid $color-green;
+      border-radius: $px * 10;
+      padding: $px * 10;
+    }
+  }
+
+  &-formButton {
+    margin-top: $pxMobile * 20;
+    padding: ($pxMobile * 10) ($pxMobile * 75);
+
+    @include media(ld) {
+      margin-top: 0;
+      padding: ($px * 10) ($px * 25);
+    }
+  }
+
+  &-bubble {
+    @include align-self(center);
+    background-color: $color-teal;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: $pxMobile * 480;
+    margin-top: 40px;
+    position: relative;
+    text-align: center;
+    width: $pxMobile * 480;
+
+    @include media(ld) {
+      height: $px * 460;
+      margin-top: 0;
+      padding: $px * 60;
+      position: absolute;
+      top: $px * -25;
+      right: $px * 40;
+      width: $px * 460;
+    }
+  }
+
+  &-bubbleContent {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+
+    @include media(ld) {
+      width: 75%;
+    }
+  }
+
+  &-bubbleText {
+    @include textMobile(32, 500, $color-white);
+    margin-bottom: $pxMobile * 30;
+    text-align: center;
+
+    @include media(ld) {
+      @include text(42);
+      margin-bottom: $px * 20;
+    }
+  }
+}

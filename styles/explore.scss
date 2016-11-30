@@ -1,0 +1,71 @@
+@import 'mixins/_all';
+
+.bioExplore {
+  @include flexBox;
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+  padding: 0 ($pxMobile * 10);
+
+  @include media(ld) {
+    margin: ($px * 50) ($px * -10) 0;
+    padding: 0;
+  }
+
+  &-item {
+    @include flex(1 0 100%);
+    @include flexBox;
+    border-bottom: ($pxMobile * 1) solid $color-greenDark;
+    padding: ($pxMobile * 20) 0;
+
+    @include media(ld) {
+      @include flex(1 0 auto);
+      border-bottom: 0;
+      margin: ($px * 10);
+      padding: 0;
+      width: calc(33.33% - ((#{$px} * 20) * 2));
+    }
+  }
+
+  &-image {
+    @include flex(0 0 auto);
+    border-radius: 50%;
+    height: $pxMobile * 70;
+    margin-right: $pxMobile * 10;
+    width: $pxMobile * 70;
+
+    @include media(ld) {
+      height: $px * 140;
+      margin-right: $px * 10;
+      width: $px * 140;
+    }
+  }
+
+  &-textContainer {
+    max-width: calc(100% - (#{$pxMobile} * 80));
+
+    @include media(ld) {
+      max-width: calc(100% - (#{$px} * 150));
+    }
+  }
+
+  &-heading {
+    @include textMobile(20, 500, $color-greenDark);
+    margin-bottom: $pxMobile * 10;
+
+    @include media(ld) {
+      @include text(24, 500, $color-greenDark);
+      margin-bottom: $px * 15;
+    }
+  }
+
+  &-link {
+    @include textMobile(14, 700, $color-green);
+    display: inline-block;
+
+    @include media(ld) {
+      @include text(16, 700, $color-green);
+      border-bottom: 1px solid $color-green;
+      padding-bottom: $px * 10;
+    }
+  }
+}

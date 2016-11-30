@@ -1,0 +1,226 @@
+.bioDirector {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  padding: 3.07693vw; }
+  @media only screen and (min-width: 768px) {
+    .bioDirector {
+      -webkit-box-direction: normal;
+      -webkit-box-orient: horizontal;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      padding: 1.76887vw; } }
+  .bioDirector-profile {
+    position: relative;
+    margin-bottom: 9.23079vw; }
+    @media only screen and (min-width: 768px) {
+      .bioDirector-profile {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 auto;
+        -moz-box-flex: 0;
+        -moz-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        margin-bottom: 0;
+        margin-right: 1.76887vw; } }
+  .bioDirector-profileHeading {
+    font-size: 6.15386vw;
+    font-weight: 400;
+    color: #004421;
+    margin-bottom: 3.07693vw; }
+    @media only screen and (min-width: 768px) {
+      .bioDirector-profileHeading {
+        font-size: 1.88679vw;
+        margin-bottom: 0.58962vw; } }
+  .bioDirector-profileSubheading {
+    font-size: 4.92309vw;
+    font-weight: 400;
+    color: #004421;
+    margin-bottom: 6.15386vw; }
+    @media only screen and (min-width: 768px) {
+      .bioDirector-profileSubheading {
+        font-size: 1.17925vw;
+        margin-bottom: 1.17925vw; } }
+  .bioDirector-profileContent {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    align-items: flex-start;
+    margin-top: 1.76887vw; }
+  .bioDirector-profileLink {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -moz-box-flex: 0;
+    -moz-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    font-size: 4.92309vw;
+    font-weight: 700;
+    color: #12b161;
+    border-bottom: 0.30769vw solid #12b161;
+    padding-bottom: 3.07693vw; }
+    @media only screen and (min-width: 768px) {
+      .bioDirector-profileLink {
+        font-size: 0.9434vw;
+        border-bottom: 0.05896vw solid #12b161;
+        margin-right: 1.17925vw;
+        padding-bottom: 0.58962vw;
+        vertical-align: top; } }
+  .bioDirector-profileImage {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -moz-box-flex: 0;
+    -moz-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    height: 21.53851vw;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 21.53851vw; }
+    @media only screen and (min-width: 768px) {
+      .bioDirector-profileImage {
+        height: 14.74056vw;
+        position: inherit;
+        transform: translateY(0);
+        width: 14.74056vw; } }
+  @media only screen and (min-width: 768px) {
+    .bioDirector-tweets {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 0 26.53301vw;
+      -moz-box-flex: 1;
+      -moz-flex: 1 0 26.53301vw;
+      -ms-flex: 1 0 26.53301vw;
+      flex: 1 0 26.53301vw; } }
+  .bioDirector-tweet {
+    background-color: #fff;
+    border-radius: 3.07693vw;
+    margin-bottom: 6.15386vw;
+    padding: 6.15386vw 3.07693vw;
+    position: relative; }
+    @media only screen and (min-width: 768px) {
+      .bioDirector-tweet {
+        border-radius: 0.58962vw;
+        margin-bottom: 0.88443vw;
+        padding: 1.17925vw; } }
+    .bioDirector-tweet::after {
+      border-left: 4.61539vw solid transparent;
+      border-top: 3.07693vw solid #fff;
+      content: '';
+      height: 0;
+      position: absolute;
+      top: 100%;
+      right: 12.30772vw;
+      width: 0; }
+      @media only screen and (min-width: 768px) {
+        .bioDirector-tweet::after {
+          border-left: 0.88443vw solid transparent;
+          border-top: 0.58962vw solid #fff;
+          right: 2.35849vw; } }
+  .bioDirector-tweetContent {
+    font-size: 4.92309vw;
+    font-weight: 400;
+    color: #004421;
+    margin-bottom: 4.61539vw; }
+    @media only screen and (min-width: 768px) {
+      .bioDirector-tweetContent {
+        font-size: 1.17925vw;
+        margin-bottom: 1.76887vw; } }
+    .bioDirector-tweetContent > a {
+      color: #12b161;
+      word-break: break-all; }
+  .bioDirector-tweetInfo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    font-size: 4.61539vw;
+    font-weight: 400;
+    color: #004421; }
+    @media only screen and (min-width: 768px) {
+      .bioDirector-tweetInfo {
+        font-size: 0.88443vw; } }
+  .bioDirector-tweetIcon {
+    font-size: 7.69233vw;
+    font-weight: 400;
+    color: #52c4cc; }
+    @media only screen and (min-width: 768px) {
+      .bioDirector-tweetIcon {
+        font-size: 1.47406vw; } }
+  .bioDirector-links {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -moz-box-flex: 1;
+    -moz-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    margin-bottom: 3.07693vw; }
+    @media only screen and (min-width: 768px) {
+      .bioDirector-links {
+        margin-bottom: 0;
+        margin-left: 1.76887vw;
+        width: calc((0.05896vw * 330)); } }
+  .bioDirector-link {
+    border: 0.30769vw solid #12b161;
+    border-radius: 1.53847vw;
+    display: block;
+    margin-bottom: 3.07693vw;
+    padding: 3.07693vw; }
+    @media only screen and (min-width: 768px) {
+      .bioDirector-link {
+        border: 0.05896vw solid #12b161;
+        border-radius: 0.29481vw;
+        margin-bottom: 0.58962vw;
+        padding: 1.17925vw; }
+        .bioDirector-link:last-child {
+          margin-bottom: 0; } }
+  .bioDirector-linkHeading {
+    font-size: 4.92309vw;
+    font-weight: 400;
+    color: #004421;
+    margin-bottom: 3.07693vw; }
+    @media only screen and (min-width: 768px) {
+      .bioDirector-linkHeading {
+        font-size: 1.17925vw;
+        margin-bottom: 1.17925vw; } }
+  .bioDirector-linkText {
+    font-size: 4.3077vw;
+    font-weight: 700;
+    color: #12b161;
+    border-bottom: 0.30769vw solid #12b161;
+    display: inline-block;
+    padding-bottom: 3.07693vw;
+    padding-right: 12.30772vw; }
+    @media only screen and (min-width: 768px) {
+      .bioDirector-linkText {
+        font-size: 0.9434vw;
+        border-bottom: 0.05896vw solid #12b161;
+        padding-bottom: 0.58962vw;
+        padding-right: 1.17925vw; } }
+
+/*# sourceMappingURL=director.css.map */

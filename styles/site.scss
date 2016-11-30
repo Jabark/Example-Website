@@ -1,0 +1,55 @@
+@import 'mixins/_all';
+
+.bioSite {
+  background-color: $color-white;
+
+  &::before {
+    content: '';
+    display: block;
+    height: $pxMobile * 65;
+    max-height: 105px;
+    width: 100%;
+
+    @include media(ld) {
+      display: none;
+    }
+  }
+
+  &-section {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+
+    @include media(ld) {
+      padding: 0 ($px * 200);
+    }
+
+    &--noPadding {
+      @extend .bioSite-section;
+      padding: 0;
+    }
+  }
+
+  &-sectionHeader {
+    @extend .bioSite-section;
+    height: $pxMobile * 65;
+    max-height: 105px;
+    position: fixed;
+    top: 0;
+    z-index: 5000;
+
+    @include media(ld) {
+      height: $px * 105;
+      max-height: none;
+      position: relative;
+    }
+  }
+
+  &-sectionSlideshow {
+    @extend .bioSite-section;
+  }
+
+  &-sectionMain {
+    margin-top: $px * 50;
+  }
+}

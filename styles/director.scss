@@ -1,0 +1,208 @@
+@import 'mixins/_all';
+
+.bioDirector {
+  @include flexBox;
+  @include flex-direction(column);
+  background-color: $color-whiteSmoke;
+  padding: $pxMobile * 10;
+
+  @include media(ld) {
+    @include flex-direction(row);
+    padding: $px * 30;
+  }
+
+  &-profile {
+    position: relative;
+    margin-bottom: $pxMobile * 30;
+
+    @include media(ld) {
+      @include flex(0 1 auto);
+      margin-bottom: 0;
+      margin-right: $px * 30;
+    }
+  }
+
+  &-profileHeading {
+    @include textMobile(20, 400, $color-greenDark);
+    margin-bottom: $pxMobile * 10;
+
+    @include media(ld) {
+      @include text(32);
+      margin-bottom: $px * 10;
+    }
+  }
+
+  &-profileSubheading {
+    @include textMobile(16, 400, $color-greenDark);
+    margin-bottom: $pxMobile * 20;
+
+    @include media(ld) {
+      @include text(20);
+      margin-bottom: $px * 20;
+    }
+  }
+
+  &-profileContent {
+    @include flexBox;
+    @include align-items(flex-start);
+    margin-top: ($px * 30);
+  }
+
+  &-profileLink {
+    @include flex(0 1 auto);
+    @include textMobile(16, 700, $color-green);
+    border-bottom: ($pxMobile * 1) solid $color-green;
+    padding-bottom: $pxMobile * 10;
+
+    @include media(ld) {
+      @include text(16);
+      border-bottom: ($px * 1) solid $color-green;
+      margin-right: ($px * 20);
+      padding-bottom: $px * 10;
+      vertical-align: top;
+    }
+  }
+
+  &-profileImage {
+    @include flex(0 1 auto);
+    height: $pxMobile * 70;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: $pxMobile * 70;
+
+    @include media(ld) {
+      height: $px * 250;
+      position: inherit;
+      transform: translateY(0);
+      width: $px * 250;
+    }
+  }
+
+  &-tweets {
+    @include media(ld) {
+      @include flex(1 0 ($px * 450));
+    }
+  }
+
+  &-tweet {
+    background-color: $color-white;
+    border-radius: $pxMobile * 10;
+    margin-bottom: $pxMobile * 20;
+    padding: ($pxMobile * 20) ($pxMobile * 10);
+    position: relative;
+
+    @include media(ld) {
+      border-radius: $px * 10;
+      margin-bottom: $px * 15;
+      padding: $px * 20;
+    }
+
+    &::after {
+      border-left: ($pxMobile * 15) solid transparent;
+      border-top: ($pxMobile * 10) solid $color-white;
+      content: '';
+      height: 0;
+      position: absolute;
+      top: 100%;
+      right: $pxMobile * 40;
+      width: 0;
+
+      @include media(ld) {
+        border-left: ($px * 15) solid transparent;
+        border-top: ($px * 10) solid $color-white;
+        right: $px * 40;
+      }
+    }
+  }
+
+  &-tweetContent {
+    @include textMobile(16, 400, $color-greenDark);
+    margin-bottom: $pxMobile * 15;
+
+    @include media(ld) {
+      @include text(20);
+      margin-bottom: $px * 30;
+    }
+
+    > a {
+      color: $color-green;
+      word-break: break-all;
+    }
+  }
+
+  &-tweetInfo {
+    @include flexBox;
+    @include justify-content(space-between);
+    @include textMobile(15, 400, $color-greenDark);
+
+    @include media(ld) {
+      @include text(15);
+    }
+  }
+
+  &-tweetIcon {
+    @include textMobile(25, 400, $color-twitter);
+
+    @include media(ld) {
+      @include text(25);
+    }
+  }
+
+  &-links {
+    @include flex(1 0 auto);
+    margin-bottom: $pxMobile * 10;
+
+    @include media(ld) {
+      margin-bottom: 0;
+      margin-left: $px * 30;
+      width: calc((#{$px} * 330));
+    }
+  }
+
+  &-link {
+    border: ($pxMobile * 1) solid $color-green;
+    border-radius: $pxMobile * 5;
+    display: block;
+    margin-bottom: $pxMobile * 10;
+    padding: $pxMobile * 10;
+
+    @include media(ld) {
+      border: ($px * 1) solid $color-green;
+      border-radius: $px * 5;
+      margin-bottom: $px * 10;
+      padding: $px * 20;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &-linkHeading {
+    @include textMobile(16, 400, $color-greenDark);
+    margin-bottom: $pxMobile * 10;
+
+    @include media(ld) {
+      @include text(20);
+      margin-bottom: $px * 20;
+    }
+  }
+
+  &-linkText {
+    @include textMobile(14, 700, $color-green);
+    border-bottom: ($pxMobile * 1) solid $color-green;
+    display: inline-block;
+    padding-bottom: $pxMobile * 10;
+    padding-right: $pxMobile * 40;
+
+    @include media(ld) {
+      @include text(16);
+      border-bottom: ($px * 1) solid $color-green;
+      padding-bottom: $px * 10;
+      padding-right: $px * 20;
+    }
+  }
+}

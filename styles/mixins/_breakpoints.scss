@@ -1,0 +1,33 @@
+$break-phablet: 480px;
+$break-tablet: 640px;
+$break-ld: 768px;
+$break-hd: 1024px;
+$break-uhd: 1280px;
+
+@mixin media($media) {
+  @if $media == phablet {
+    @media only screen and (min-width: $break-phablet) {
+      @content;
+    }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $break-tablet) {
+      @content;
+    }
+  }
+  @else if $media == ld {
+    @media only screen and (min-width: $break-ld) {
+      @content;
+    }
+  }
+  @else if $media == hd {
+    @media only screen and (min-width: $break-hd) {
+      @content;
+    }
+  }
+  @else if $media == uhd {
+    @media only screen and (min-width: $break-uhd) {
+      @content;
+    }
+  }
+}

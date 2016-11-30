@@ -1,0 +1,105 @@
+@import 'mixins/_all';
+
+.bioReports {
+  @include flexBox;
+  @include flex-wrap(wrap);
+  padding: $pxMobile * 10;
+
+  @include media(ld) {
+    padding: 0;
+  }
+
+  &-header {
+    @include flex(1 0 100%);
+    @include flexBox;
+    @include align-items(center);
+    @include justify-content(space-between);
+    margin-bottom: $pxMobile * 10;
+
+    @include media(ld) {
+      margin-bottom: $px * 30;
+    }
+  }
+
+  &-heading {
+    @include textMobile(20, 400, $color-greenDark);
+
+    @include media(ld) {
+      @include text(32);
+    }
+  }
+
+  &-headerButton {
+    @include media(ld) {
+      &::after {
+        content: ' & reports';
+      }
+    }
+  }
+
+  &-report {
+    @include flexBox;
+    @include flex(1 0 auto);
+    background-color: $color-whiteSmoke;
+    border-radius: $pxMobile * 5;
+    box-sizing: border-box;
+    margin-bottom: $pxMobile * 10;
+    padding: $pxMobile * 10;
+    width: 100%;
+
+    @include media(ld) {
+      @include flex(1 0 0px);
+      border-radius: $px * 5;
+      margin-bottom: 0;
+      margin-left: $px * 20;
+      padding: $px * 20;
+
+      &:nth-child(3n+2) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &-reportImage {
+    height: $pxMobile * 75;
+    margin-right: $pxMobile * 15;
+    width: $pxMobile * 50;
+
+    @include media(ld) {
+      height: $px * 150;
+      margin-right: $px * 20;
+      width: $px * 100;
+    }
+  }
+
+  &-reportContent {
+    max-width: calc(100% - (#{$pxMobile} * 65));
+
+    @include media(ld) {
+      max-width: calc(100% - (#{$px} * 140));
+    }
+  }
+
+  &-reportHeading {
+    @include textMobile(16, 400, $color-greenDark);
+    margin-bottom: $pxMobile * 10;
+
+    @include media(ld) {
+      @include text(20);
+      margin-bottom: $px * 20;
+    }
+  }
+
+  &-reportLink {
+    @include textMobile(14, 700, $color-green);
+    border-bottom: ($pxMobile * 1) solid $color-green;
+    display: block;
+    padding-bottom: $pxMobile * 10;
+
+    @include media(ld) {
+      @include text(16);
+      border-bottom: ($px * 1) solid $color-green;
+      padding-bottom: $px * 10;
+    }
+  }
+}

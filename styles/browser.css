@@ -1,0 +1,31 @@
+.bioBrowser {
+  background-color: #004421;
+  bottom: 0;
+  box-sizing: border-box;
+  display: block;
+  height: 61.5386vw;
+  padding: 3.07693vw;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10000; }
+  @media only screen and (min-width: 768px) {
+    .bioBrowser {
+      height: 11.79245vw;
+      padding: 0.58962vw; } }
+  .bioBrowser-line {
+    font-size: 3.69232vw;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 6.15386vw; }
+    @media only screen and (min-width: 768px) {
+      .bioBrowser-line {
+        font-size: 1.17925vw;
+        margin-bottom: 1.17925vw; } }
+    .bioBrowser-line > a {
+      text-decoration: underline; }
+  .bioBrowser-closeButton {
+    display: inline-block; }
+
+/*# sourceMappingURL=browser.css.map */

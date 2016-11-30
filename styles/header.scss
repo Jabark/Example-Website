@@ -1,0 +1,255 @@
+@import 'mixins/_all';
+
+.bioHeader {
+  @include flexBox;
+  @include align-items(center);
+  background-color: $color-white;
+
+  &-navigation {
+    @include flex(1 0 auto);
+    @include flexBox;
+    @include align-items(center);
+    @include justify-content(space-between);
+    position: relative;
+  }
+
+  &-logoLink {
+    display: inline-block;
+  }
+
+  &-logo {
+    display: block;
+    height: $pxMobile * 65;
+    max-height: 105px;
+
+    @include media(ld) {
+      height: $px * 105;
+      max-height: none;
+    }
+  }
+
+  &-navActivator,
+  &-navList {
+    display: none;
+  }
+
+  &-navIcon {
+    color: $color-greenDark;
+    font-size: 21px;
+    padding: 6px 10px;
+
+    @include media(ld) {
+      display: none;
+    }
+  }
+
+  &-navActivator:checked + &-navIcon {
+    background-color: $color-greenDark;
+    color: $color-white;
+  }
+
+  &-navActivator:checked + &-navIcon + &-navList {
+    display: block;
+  }
+
+  &-navList {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 200;
+
+    @include media(phablet) {
+      left: 50%;
+    }
+
+    @include media(ld) {
+      @include flexBox;
+      @include align-items(center);
+      @include justify-content(flex-end);
+      left: auto;
+      position: relative;
+      right: auto;
+      top: auto;
+    }
+  }
+
+  &-navListItem {
+    @include flexBox;
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+    background-color: $color-greenDark;
+    border-bottom: 1px solid $color-white;
+    text-align: center;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    @include media(ld) {
+      background-color: transparent;
+      font-size: $px * 15;
+      display: inline-block;
+      margin-right: $px * 20;
+      position: relative;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        .bioHeader-navListSub {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &-navListItemLink {
+    @include flex(1 0 100%);
+    background-color: $color-greenDark;
+    color: $color-white;
+    display: block;
+    font-weight: normal;
+    padding: 5px 0;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: lighten($color-greenDark, 5%)
+    }
+
+    @include media(ld) {
+      @include flex-basis(auto);
+      background-color: transparent;
+      color: $color-green;
+      display: inline-block;
+      font-weight: 800;
+
+      &:not(:last-child) {
+        &::after {
+          color: $color-greenDark;
+          content: '\f0d7';
+          display: inline-block;
+          font: normal normal normal ($px * 14) FontAwesome;
+          padding-left: 5px;
+        }
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &-navListItemLinkButton {
+    @extend .bioHeader-navListItemLink;
+
+    + * {
+      display: none;
+    }
+
+    @include media(ld) {
+      display: none;
+
+      + * {
+        display: block;
+      }
+    }
+  }
+
+  &-navListItemIcon {
+    color: $color-greenDark;
+    display: none;
+    font-size: $px * 24;
+    font-weight: normal;
+
+    @include media(ld) {
+      display: inline-block;
+    }
+  }
+
+  &-navListItemIconText {
+    @include media(ld) {
+      display: none;
+    }
+  }
+
+  &-navListSub {
+    background-color: $color-greenDark;
+    color: $color-white;
+    font-size: 0.9em;
+    list-style: disc inside;
+    padding-bottom: $px * 5;
+    text-align: left;
+
+    @include media(ld) {
+      background-color: $color-whiteSmoke;
+      border: 1px solid $color-grey;
+      border-radius: $px * 5;
+      box-shadow: 0 ($px * 5) ($px * 10) rgba($color-greenDark, 0.5);
+      color: $color-greenDark;
+      display: none;
+      font-size: 1em;
+      left: 50%;
+      list-style: none;
+      padding: ($px * 10) ($px * 20);
+      position: absolute;
+      top: calc(100% + (#{$px} * 27));
+      transform: translateX(-50%);
+      width: $px * 200;
+      z-index: 50;
+
+      &::before {
+        border-bottom: ($px * 30) solid darken($color-grey, 10%);
+        border-left: ($px * 75) solid transparent;
+        border-right: ($px * 75) solid transparent;
+        bottom: 100%;
+        content: '';
+        display: block;
+        height: 0;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 0;
+      }
+
+      &::after {
+        border-bottom: ($px * 29) solid $color-whiteSmoke;
+        border-left: ($px * 74) solid transparent;
+        border-right: ($px * 74) solid transparent;
+        bottom: 100%;
+        content: '';
+        display: block;
+        height: 0;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 0;
+      }
+    }
+  }
+
+  &-navListItemSub {
+    @include media(ld) {
+      padding: 10px 0;
+    }
+  }
+
+  &-navListItemSubLink {
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: underline;
+    }
+
+    @include media(ld) {
+      color: $color-greenDark;
+      top: 100%;
+      transform: translateX(-50%);
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import 'mixins/_all';
+
+.bioNews {
+  @include flexBox;
+  @include flex-wrap(wrap);
+  margin-bottom: $pxMobile * 10;
+  padding: $pxMobile * 10;
+
+  @include media(ld) {
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  &-item {
+    @include flex(1 0 100%);
+    margin-bottom: $pxMobile * 10;
+
+    @include media(ld) {
+      @include flex(1 0 0px);
+      margin-bottom: 0;
+      margin-left: $px * 40;
+
+      &:nth-child(4n + 1) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &-itemStrap {
+    @include textMobile(14, 700, $color-green);
+    padding-bottom: $pxMobile * 10;
+
+    @include media(ld) {
+      @include text(16);
+      padding-bottom: $px * 10;
+    }
+  }
+
+  &-itemStrapDate {
+    @include textMobile(14, 400, $color-greenDark);
+    margin-left: $pxMobile * 10;
+
+    @include media(ld) {
+      @include text(15);
+      margin-left: $px * 10;
+    }
+  }
+
+  &-itemHeading {
+    @include textMobile(16, 400, $color-greenDark);
+    padding-bottom: $pxMobile * 10;
+
+    @include media(ld) {
+      @include text(20);
+      padding-bottom: $px * 10;
+    }
+  }
+
+  &-itemLink {
+    @extend .bioNews-itemStrap;
+    display: block;
+    border-bottom: ($pxMobile * 1) solid $color-green;
+
+    @include media(ld) {
+      border-bottom: ($px * 1) solid $color-green;
+    }
+  }
+}
